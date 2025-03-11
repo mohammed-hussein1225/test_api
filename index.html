@@ -8,17 +8,55 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
     <title>API</title>
+    <style>
+      .container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      td button {
+        width: 100%;
+        cursor: pointer;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 18px;
+      }
+    </style>
   </head>
   <body>
-    <button class="btn" style="font-size: 20px">DELETE</button>
-    <button class="btn2" style="font-size: 20px">GET</button>
-    <button class="btn3" style="font-size: 20px">SEND</button>
-
-    <h3>
-      <a href=" https://mockapi.io/projects/67ce9cbb125cd5af757b3856"
-        >ده لينك البيانات التي تم ارسالها</a
-      >
-    </h3>
+    <div class="container">
+      <table>
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
     <script src="jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
   </body>
